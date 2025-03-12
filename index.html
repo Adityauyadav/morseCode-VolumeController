@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Volume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundAudio" loop>
+        <source src="fur-elise-beethoven-216331.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <div class="container">
+        <div class="title">Morse Code Volume Control</div>
+        <div id="speaker" class="speaker">
+            <i class="fas fa-volume-high"></i>
+        </div>
+        <div id="morse" class="morse-display"></div>
+        <div id="volume" class="volume-display">Volume: 50%</div>
+        <div class="instructions">
+            Tap SPACE for dot (.) or hold for dash (-)<br>
+            Press ENTER to apply.
+        </div>
+        <div class="morse-reference">
+            <div class="morse-item">.- 10%</div>
+            <div class="morse-item">-... 20%</div>
+            <div class="morse-item">-.-. 30%</div>
+            <div class="morse-item">-.. 40%</div>
+            <div class="morse-item">. 50%</div>
+            <div class="morse-item">..-. 60%</div>
+            <div class="morse-item">--. 70%</div>
+            <div class="morse-item">.... 80%</div>
+            <div class="morse-item">.. 90%</div>
+            <div class="morse-item">.--- 100%</div>
+        </div>
+    </div>
+
+<div class="audio-toggle">
+  <i id="audioToggle" class="fas fa-music"></i>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
